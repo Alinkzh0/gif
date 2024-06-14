@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Animated Image Centered</title>
+<style>
+  body, html {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+  }
+
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+  .centered-image {
+    width: 150px; /* You can adjust the size */
+    height: 150px; /* You can adjust the size */
+    background-image: url('Designer.gif'); /* Replace with your image URL */
+    background-size: cover;
+    animation: spin 5s linear infinite;
+  }
+</style>
+</head>
+<body>
+
+<div class="centered-image"></div>
+
+</body>
+</html>
